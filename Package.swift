@@ -30,7 +30,7 @@ let package = Package(
     targets: frameworks.map { frameworkName, checksum in
         .binaryTarget(
             name: frameworkName,
-            url: "https://github.com/OrdynaryShark/podlodka-firebase-example/releases/download/0.0.2/\(frameworkName).xcframework.zip",
+            url: "https://storage.googleapis.com/podlodka-firebase-example/\(frameworkName).xcframework.zip",
             checksum: checksum
         )
     }
